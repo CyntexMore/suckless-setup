@@ -1,4 +1,4 @@
-/* See LICENSE file for copyright and license details. */
+/* See LhCENSE file for copyright and license details. */
 
 /*
  * appearance
@@ -146,7 +146,7 @@ static const char *colorname[] = {
 	"#cccccc",
 	"#555555",
 	"gray90", /* default foreground colour */
-	"black", /* default background colour */
+	"#1E1E2E", /* default background colour */
 };
 
 
