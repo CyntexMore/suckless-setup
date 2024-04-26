@@ -7,7 +7,7 @@ static const unsigned int gappih    = 20;       /* horiz inner gap between windo
 static const unsigned int gappiv    = 20;       /* vert inner gap between windows */
 static const unsigned int gappoh    = 20;       /* horiz outer gap between windows and screen edge */
 static const unsigned int gappov    = 20;       /* vert outer gap between windows and screen edge */
-static       int smartgaps          = 0;        /* 1 means no outer gap when there is only one window */
+static       int smartgaps          = 1;        /* 1 means no outer gap when there is only one window */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
 static const int splitstatus        = 1;        /* 1 for split status items */
@@ -16,21 +16,18 @@ static const char *splitdelim        = ";";       /* Character used for separati
 static const char dmenufont[]       = "monospace:size=10"; */
 static const char *fonts[] = {"JetBrainsMono NF:style=Bold:size=12"};
 static const char dmenufont[] = "JetBrainsMono NF:style=Bold:size=12";
-static const char col_gray1[]       = "#222222";
-static const char col_gray2[]       = "#444444";
-static const char col_gray3[]       = "#bbbbbb";
-static const char col_gray4[]       = "#eeeeee";
-static const char magenta[]         = "#381965";
-static const char magenta2[]        = "#3d1865";
-static const char magenta3[]        = "#b41c6a"; 
-static const char col_cyan[]        = "#3d1865";
+static const char col_gray1[]       = "#232136";
+static const char col_gray2[]       = "#e0def4";
+static const char col_gray3[]       = "#e0def4";
+static const char col_gray4[]       = "#e0def4";
+static const char col_cyan[]        = "#393552";
 static const unsigned int baralpha = 190;
 static const unsigned int borderalpha = 190;
 
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */
-	[SchemeNorm] = { col_gray3, col_gray1, magenta3 },
-	[SchemeSel]  = { col_gray4, magenta2, magenta3 },
+	[SchemeNorm] = { col_gray3, col_gray1, col_gray2 },
+	[SchemeSel]  = { col_gray4, col_cyan, col_gray4 },
 };
 
 static const unsigned int alphas[][3]      = {
